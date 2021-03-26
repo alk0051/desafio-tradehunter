@@ -1,0 +1,18 @@
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 55vw;
+  color: #000;
+  border-radius: 8px;
+  background-color: #eee;
+}
+
+span {
+  background-color: #eee;
+  color: #333;
+}

@@ -4,7 +4,7 @@ Desafio Trade Hunter
  	- Necessário utilizar AngularJs (https://angularjs.org/)
 	- Criar uma página de consulta simples com um campo em que o usuário possa digitar um ticker e um botão para enviar a consulta;
 	- No sucesso (caso encontre o ticker), exibir o resultado abaixo:
-		- Exibir o resultado da consulta abaixo com os seguintes campos:
+		- Exibir o resultado da consulta abaix	o com os seguintes campos:
 		
 			- Informações sobre a empresa:
 				(https://polygon.io/docs/get_v1_meta_symbols__stocksTicker__company_anchor)

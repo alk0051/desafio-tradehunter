@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  width: 33.85vw;
+  height: 45px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #ccc;
+  padding-left: 15px;
+  color: #111;
+  outline: 0;
+  font-size: 22px;
+}
+
+label {
+  color: #fff;
+}
+
+.btn {
+  background-color: #2e8b57;
+  font-size: 20px;
+  border: 0;
+  margin-left: 10px;
+  border-radius: 5px;
+  height: 40px;
+  outline: 0;
+}
+
+.btn:hover {
+  background-color: #096131;
+  color: #111;
+  cursor: pointer;
+}
