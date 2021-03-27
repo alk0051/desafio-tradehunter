@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import request from 'request';
-import api_key from '../secret'
+import api_key from '../../secret'
   
 
 const routes = express.Router();
