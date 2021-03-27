@@ -5,10 +5,9 @@ import api_key from '../secret'
 
 const routes = express.Router();
 
-
-const tickerDetails = routes.get('/tickerDetails', (req, res) => {
+const tickerInfo = routes.get('/tickerInfo', (req, res) => {
   const tickerName = req.query.ticker;
-  const urlTickerDetails: string = `https://api.polygon.io/v1/meta/symbols/${tickerName}/company?&apiKey=${api_key}`
+  const urlTickerDetails: string = `https://api.polygon.io/v1/open-close/${tickerName}/2021-03-24?unadjusted=true&apiKey=${api_key}`
 
   res.setHeader('Access-Control-Allow-Origin', '*');
   request(urlTickerDetails, (error, response, body) => {
@@ -21,4 +20,4 @@ const tickerDetails = routes.get('/tickerDetails', (req, res) => {
 
 
 
-export default tickerDetails;
+export default tickerInfo;

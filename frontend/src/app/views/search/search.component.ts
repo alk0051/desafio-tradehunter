@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TickerService } from '../../services/ticker.service';
-import TickerInfo, { ITicker } from '../../models/TickerInfo';
+import { TickerService } from '../../services/companyInfo/company.service';
+import { ITicker } from '../../models/CompanyInfo';
 
 @Component({
   selector: 'app-search',

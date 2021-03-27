@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { TickerService } from '../../services/ticker.service';
-import TickerInfo, { ITicker } from '../../models/TickerInfo';
+import { TickerService } from '../../services/companyInfo/company.service';
+import { ITicker } from '../../models/CompanyInfo';
 
 @Component({
   selector: 'app-infolist',
@@ -9,23 +9,12 @@ import TickerInfo, { ITicker } from '../../models/TickerInfo';
 })
 export class InfolistComponent implements OnInit {
 
-  
   @Input("ticker")info: ITicker;
- //ticker: string;
-
 
   constructor(
     public Ticker: TickerService,
   ) { }
 
   ngOnInit(): void {
-    //this.getInfo();
   }
-
-  // getInfo() {
-  //   this.Ticker.getInfoFromApi(this.ticker).subscribe(data => {
-  //     this.info = data;
-  //     console.log(this.info);
-  //   });
-  // }
 }

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
-import ITicker from '../models/TickerInfo';
+import {ITicker} from '../../models/CompanyInfo';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 
 export class TickerService {
 
-  public url: string = `http://localhost:3333/tickerDetails?ticker=`;
+  public url: string = `http://localhost:3333/companyInfo?ticker=`;
 
   httpOptions = {
     headers: new HttpHeaders({

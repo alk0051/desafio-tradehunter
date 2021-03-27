@@ -1,10 +1,11 @@
 import express from 'express';
-import tickerDetailsRoutes from './ticker_details.routes';
-
+import companyInfoRoutes from './company_info.routes';
+import tickerInfo from './ticker_info.routes';
 
 const routes = express.Router();
 
-routes.use(tickerDetailsRoutes);
+routes.use(companyInfoRoutes);
+routes.use(tickerInfo);
 
 
 export default routes;
