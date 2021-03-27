@@ -2,11 +2,10 @@
 
 <div align="center">
 	<img src="/app_screenshot.png" />
-</div>
+</div><br/>
 
 
 
-Desafio Trade Hunter
 
 - Frontend
  	- Necessário utilizar AngularJs (https://angularjs.org/)
