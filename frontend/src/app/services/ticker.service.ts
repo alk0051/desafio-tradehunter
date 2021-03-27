@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 
 export class TickerService {
 
-  public url: string = "http://localhost:3333/tickerDetails";
+  public url: string = "http://localhost:3333/tickerDetails?ticker=AAPL";
 
 
   httpOptions = {
