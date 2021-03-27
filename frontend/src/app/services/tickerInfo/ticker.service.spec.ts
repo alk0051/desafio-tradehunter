@@ -12,5 +12,9 @@ describe('TickerService', () => {
 
   it('should be created', () => {
     expect(service).toBeTruthy();
+
+    const info = TickerService;
+
+    expect(info);
   });
 });

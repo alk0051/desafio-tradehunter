@@ -1,16 +1,24 @@
 <div class="container">
   <div class="card">
-    <img src={{info.logo}} /><br/>
-    Nome: <span>{{info.name}}</span><br/><br/>
-    País: <span>{{info.country}}</span><br/><br/>
-    Tipo industrial: <span>{{info.industry}}</span><br/><br/>
-    Setor: <span>{{info.sector}}</span><br/><br/>
-    Número de empregados: <span>{{info.employees}}</span><br/><br/>
-    Quem é o CEO: <span>{{info.ceo}}</span><br/><br/>
-    Site da empresa: <span>{{info.url}}</span><br/><br/>
-    Descrição: <span>{{info.description}}</span><br/><br/>
-    Bolsa de valores: <span>{{info.exchangeSymbol}}</span><br/><br/>
-    Endereço completo: <span>{{info.hq_address}}</span><br/><br/>
-    Tags referentes à empresa: <span>{{info.tags}}</span><br/><br/>
+    <img src={{companyInfo.logo}} /><br/>
+    <h3>Informações sobre {{companyInfo.name}}</h3>
+    País: <span>{{companyInfo.country}}</span><br/><br/>
+    Tipo industrial: <span>{{companyInfo.industry}}</span><br/><br/>
+    Setor: <span>{{companyInfo.sector}}</span><br/><br/>
+    Número de empregados: <span>{{companyInfo.employees}}</span><br/><br/>
+    Quem é o CEO: <span>{{companyInfo.ceo}}</span><br/><br/>
+    Site da empresa: <span>{{companyInfo.url}}</span><br/><br/>
+    Descrição: <span>{{companyInfo.description}}</span><br/><br/>
+    Bolsa de valores: <span>{{companyInfo.exchangeSymbol}}</span><br/><br/>
+    Endereço completo: <span>{{companyInfo.hq_address}}</span><br/><br/>
+    Tags referentes à empresa: <span>{{companyInfo.tags}}</span><br/><br>
+    
+    <h3>Informações sobre o ticker de {{companyInfo.name}}</h3>
+    Abertura: <span>{{tickerInfo.open}}</span><br/><br/>
+    Máxima: <span>{{tickerInfo.high}}</span><br/><br/>
+    Mínima: <span>{{tickerInfo.low}}</span><br/><br/>
+    Fechamento: <span>{{tickerInfo.close}}</span><br/><br/>
+    Volume de negociação: <span>{{tickerInfo.volume}}</span><br/><br/>
+
   </div>
 </div>

@@ -12,6 +12,7 @@ import { InfolistComponent } from './views/infolist/infolist.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './views/home/home.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

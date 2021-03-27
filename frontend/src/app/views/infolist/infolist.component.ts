@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { TickerService } from '../../services/companyInfo/company.service';
-import { ITicker } from '../../models/CompanyInfo';
+import { CompanyService } from '../../services/companyInfo/company.service';
+import { ICompany } from '../../models/CompanyInfo';
+import { TickerService } from 'src/app/services/tickerInfo/ticker.service';
+import { ITicker } from 'src/app/models/TickerInfo';
 
 @Component({
   selector: 'app-infolist',
@@ -9,10 +11,12 @@ import { ITicker } from '../../models/CompanyInfo';
 })
 export class InfolistComponent implements OnInit {
 
-  @Input("ticker")info: ITicker;
+  @Input("company")companyInfo: ICompany;
+  @Input("ticker")tickerInfo: ITicker;
 
   constructor(
-    public Ticker: TickerService,
+    public Company: CompanyService,
+    public Ticker: TickerService
   ) { }
 
   ngOnInit(): void {

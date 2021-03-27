@@ -1,4 +1,4 @@
-export interface ITicker{
+export interface ICompany{
   logo: string;
   name: string;
   country: string;

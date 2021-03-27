@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
-import {ITicker} from '../../models/CompanyInfo';
-import { Observable } from 'rxjs';
+import { ICompany } from '../../models/CompanyInfo';
+import { empty, Observable } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })  
 
-export class TickerService {
+export class CompanyService {
 
-  public url: string = `http://localhost:3333/companyInfo?ticker=`;
+  public url: string = 'http://localhost:3333/companyInfo?ticker=';
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -21,7 +22,7 @@ export class TickerService {
     private httpClient: HttpClient
   ) {}
 
-  public getInfoFromApi(tickerName: string): Observable<ITicker> {
-    return this.httpClient.get<ITicker>(this.url + tickerName);
+  public getCompanyInfo(tickerName: string): Observable<ICompany> {
+    return this.httpClient.get<ICompany>(this.url + tickerName);
   }
 }

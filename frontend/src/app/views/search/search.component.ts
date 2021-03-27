@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { TickerService } from '../../services/companyInfo/company.service';
-import { ITicker } from '../../models/CompanyInfo';
+import { CompanyService } from '../../services/companyInfo/company.service';
+import { ICompany } from '../../models/CompanyInfo';
+import { ITicker } from 'src/app/models/TickerInfo';
+import { TickerService } from 'src/app/services/tickerInfo/ticker.service';
 
 @Component({
   selector: 'app-search',
@@ -11,20 +13,26 @@ export class SearchComponent implements OnInit {
 
   ticker: string;
 
-  info: ITicker;
+  companyInfo: ICompany;
+  tickerInfo: ITicker;
 
   constructor(
-    public Ticker: TickerService,
+    public Company: CompanyService,
+    public Ticker: TickerService
   ) {}
 
   ngOnInit(): void {
   }
 
-  searchTicker = () => {
-    this.Ticker.getInfoFromApi(this.ticker).subscribe(data => {
-      this.info = data;
-      console.log(this.info);
+  searchCompanyAndTicker = () => {
+    this.Company.getCompanyInfo(this.ticker).subscribe(data => {
+      this.companyInfo = data;
+      console.log(this.companyInfo);
+    });
+
+    this.Ticker.getTickerInfo(this.ticker).subscribe(data => {
+      this.tickerInfo = data;
+      console.log(this.tickerInfo);
     });
   }
-
 }
