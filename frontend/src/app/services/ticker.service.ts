@@ -9,8 +9,7 @@ import { Observable } from 'rxjs';
 
 export class TickerService {
 
-  public url: string = "http://localhost:3333/tickerDetails?ticker=AAPL";
-
+  public url: string = `http://localhost:3333/tickerDetails?ticker=`;
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -22,7 +21,7 @@ export class TickerService {
     private httpClient: HttpClient
   ) {}
 
-  public getInfo(): Observable<ITicker> {
-    return this.httpClient.get<ITicker>(this.url);
+  public getInfoFromApi(tickerName: string): Observable<ITicker> {
+    return this.httpClient.get<ITicker>(this.url + tickerName);
   }
 }

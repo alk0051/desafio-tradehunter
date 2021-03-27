@@ -1,6 +1,11 @@
 <div class="container">
-    <label>
-      <input class="search" placeholder="Ticker..."/>
-    </label>
-    <button class="btn">search</button>
+  <label>
+    <input 
+      type="text"
+      class="search"
+      placeholder="Ticker..." 
+      [(ngModel)]="ticker"
+    />
+  </label>
+  <button class="btn" (click)="searchTicker()">search</button>
 </div>

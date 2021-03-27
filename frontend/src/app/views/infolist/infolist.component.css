@@ -6,7 +6,8 @@
 
 .card {
   position: relative;
-  width: 55vw;
+  width: 50vw;
+  padding: 15px;
   color: #000;
   border-radius: 8px;
   background-color: #eee;
