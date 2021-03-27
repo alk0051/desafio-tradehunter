@@ -41,15 +41,9 @@ Desafio Trade Hunter
 				- A data pode ser sempre do dia 24/03/2021
 	- Tratamento em caso erro;
 
-- Avaliação:
-	- Avaliação da estrutura lexical da linguagem;
-	- Definição da arquitetura de software;
-	- Implementação do HTML5 e CSS3;
-	- Utilização de frameworks e bibliotecas;
-	- Testes unitários.
-
 
 Tickers de exemplo para consulta: AAPL, MSFT, TSLA, GME
 
-
-Prazo de 3 dias.
+<div align="center">
+	<img src="/app_screenshot.png" />
+</div>
