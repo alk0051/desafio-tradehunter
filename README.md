@@ -1,5 +1,10 @@
 # desafio-tradehunter
 
+<div align="center">
+	<img src="/app_screenshot.png" />
+</div>
+
+
 
 Desafio Trade Hunter
 
@@ -44,6 +49,3 @@ Desafio Trade Hunter
 
 Tickers de exemplo para consulta: AAPL, MSFT, TSLA, GME
 
-<div align="center">
-	<img src="/app_screenshot.png" />
-</div>
